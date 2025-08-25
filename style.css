@@ -1,0 +1,163 @@
+*:root {
+  background-image: url("./nasa-Q1p7bh3SHj8-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.input-container {
+  position: relative; /* Essential for positioning the icon */
+  display: flex; /* Or other layout methods */
+  align-items: center; /* Vertically align icon and input */
+  width: 100%;
+}
+
+.icon {
+  position: absolute; /* Position the icon relative to the container */
+  left: 10px; /* Adjust as needed for desired icon position */
+  /* Add styling for icon size, color, etc. */
+  color: rgb(78, 70, 70);
+}
+
+.large-icon {
+  color: #00adb5;
+  font-size: 80px;
+}
+
+.input-field {
+  padding-left: 40px; /* Add padding to prevent text from overlapping the icon */
+  border-radius: 10px;
+  height: 30px;
+  width: 100%;
+  border-style: none;
+  transition: all 0.5s;
+  &:focus {
+    transition: all 0.5s;
+    box-shadow: 0px 1px 10px rgb(255, 255, 255);
+    outline: none;
+  }
+  &:invalid {
+    outline: 2px solid red;
+  }
+  &:user-valid {
+    outline: 2px solid rgb(20, 187, 20);
+  }
+  /* Add other input field styling */
+}
+
+.icon-holder {
+  background-color: #eeeeee;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.sign-in-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  background-color: #393e46d2;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 50px;
+  transition: all 1s ease;
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 1px 15px #00adb5;
+    transition: all 1s ease;
+  }
+  & p {
+    margin: 0;
+  }
+}
+
+#sign-in-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-title {
+  color: #eeeeee;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.social-login-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 10px;
+}
+
+.social-login-container button {
+  padding: 15px;
+  font-weight: 800;
+  font-size: 15px;
+  background-color: #00adb5;
+  color: #eeeeee;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 1s ease;
+  &:hover {
+    background-color: #eeeeee;
+    color: #00adb5;
+    transition: all 1s ease;
+  }
+}
+
+.login-btn {
+  background-color: limegreen;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+  font-weight: 900;
+  width: 100%;
+  transition: all 0.5s ease;
+  &:hover {
+    box-shadow: 0px 1px 15px #70b500;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+}
+
+.error-msg {
+  color: red;
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+  position: relative;
+  top: 0;
+  left: 5px;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animated {
+  animation: shake 0.3s;
+}

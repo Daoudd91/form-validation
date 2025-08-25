@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-7.0.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sign-in-form-container">
+      <div class="sign-in-title"><p>Sign up</p></div>
+      <div class="icon-holder">
+        <i class="fa fa-user large-icon"></i>
+      </div>
+      <form id="sign-in-form" novalidate>
+        <div class="input-container">
+          <i class="fa fa-at icon"></i>
+          <!-- Example Font Awesome icon -->
+          <input
+            type="email"
+            placeholder="Email"
+            id="email"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <i class="fa fa-earth icon"></i>
+          <!-- Example Font Awesome icon -->
+          <input
+            type="text"
+            placeholder="Country"
+            id="country"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <i class="fa fa-envelopes-bulk icon"></i>
+          <!-- Example Font Awesome icon -->
+          <input
+            type="text"
+            placeholder="Postal Code"
+            id="postal-code"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <i class="fa fa-lock icon"></i>
+          <!-- Example Font Awesome icon -->
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <i class="fa fa-lock icon"></i>
+          <!-- Example Font Awesome icon -->
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            id="confirm-password"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="social-login-container">
+          <button class="social-login">
+            <i class="fa-brands fa-facebook"></i>
+            SignUp with Facebook
+          </button>
+          <button class="social-login">
+            <i class="fa-brands fa-google"></i>
+            SignUp with Google
+          </button>
+        </div>
+        <button class="login-btn">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          SignUp
+        </button>
+      </form>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
